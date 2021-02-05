@@ -9,7 +9,7 @@ documentation = "https://github.com/spacewalkio/seal"
 repository = "https://github.com/spacewalkio/seal"
 categories = ["command-line-utilities"]
 keywords = ["clivern", "seal"]
-description = "High Quality Rust Libraries"
+description = "Rust Libraries for Learning Purposes"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
