@@ -14,5 +14,5 @@ pub mod environ {
 
 #[test]
 fn test_get_config() {
-    assert_eq!(environ::get_config("CARGO_PKG_NAME"), "hawk_rs");
+    assert_eq!(environ::get_config("CARGO_PKG_NAME"), "seal");
 }

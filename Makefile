@@ -4,7 +4,7 @@ RUSTUP ?= rustup
 
 help: Makefile
 	@echo
-	@echo " Choose a command run in hawk_rs:"
+	@echo " Choose a command run in Seal:"
 	@echo
 	@sed -n 's/^##//p' $< | column -t -s ':' |  sed -e 's/^/ /'
 	@echo
