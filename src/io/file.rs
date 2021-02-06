@@ -41,16 +41,6 @@ pub mod file {
     }
 }
 
-// dir module
-pub mod dir {
-    use std::path::Path;
-
-    // Check if path is dir
-    pub fn is_dir(path: &str) -> bool {
-        return Path::new(path).is_dir();
-    }
-}
-
 #[test]
 fn test_path_exists() {
     assert_eq!(file::path_exists("not_found.md"), false);
@@ -62,12 +52,6 @@ fn test_path_exists() {
 fn test_is_file_exists() {
     assert_eq!(file::is_file("README.md"), true);
     assert_eq!(file::is_file("main.rs"), false);
-}
-
-#[test]
-fn test_is_dir_exists() {
-    assert_eq!(dir::is_dir("src"), true);
-    assert_eq!(dir::is_dir("dir"), false);
 }
 
 #[test]

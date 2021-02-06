@@ -11,9 +11,13 @@ mod core {
     pub mod obj;
 }
 
+mod io {
+    pub mod dir;
+    pub mod file;
+}
+
 mod util {
     pub mod environ;
-    pub mod io;
 }
 
 fn main() {
