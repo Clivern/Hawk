@@ -25,3 +25,8 @@ pub fn double3(mut x: [i32; 10]) -> [i32; 10] {
     }
     x
 }
+
+// Generics
+pub fn multi(x: i32, y: i32) -> i32 {
+    x * y
+}

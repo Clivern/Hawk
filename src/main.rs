@@ -40,4 +40,7 @@ fn main() {
     //*p = 40;
 
     // println!("{}", p);
+
+    // Casting
+    // println!("{}", core::func::multi(2i32, 4i64 as i32) as i64);
 }
