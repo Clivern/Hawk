@@ -2,24 +2,24 @@
 // Use of this source code is governed by the MIT
 // license that can be found in the LICENSE file.
 
-struct Person {
+pub struct Person {
     first_name: String,
     last_name: String,
 }
 
 impl Person {
-    fn new(first: &str, last: &str) -> Person {
+    pub fn new(first: &str, last: &str) -> Person {
         Person {
             first_name: first.to_string(),
             last_name: last.to_string(),
         }
     }
 
-    fn set_first_name(&mut self, name: &str) {
+    pub fn set_first_name(&mut self, name: &str) {
         self.first_name = name.to_string();
     }
 
-    fn set_last_name(&mut self, last: &str) {
+    pub fn set_last_name(&mut self, last: &str) {
         self.last_name = last.to_string();
     }
 }
@@ -30,10 +30,8 @@ fn test_person() {
 
     assert_eq!(p.first_name, "John".to_string());
     assert_eq!(p.last_name, "Smith".to_string());
-
     p.set_first_name("Joe");
     p.set_last_name("Doe");
-
     assert_eq!(p.first_name, "Joe".to_string());
     assert_eq!(p.last_name, "Doe".to_string());
 }
