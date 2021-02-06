@@ -42,5 +42,5 @@ fn main() {
     // println!("{}", p);
 
     // Casting
-    // println!("{}", core::func::multi(2i32, 4i64 as i32) as i64);
+    // println!("{}", core::func::multiply(2i32, 4i64 as i32) as i64);
 }
