@@ -11,12 +11,12 @@ pub mod file {
 
     // Check if path exists
     pub fn path_exists(path: &str) -> bool {
-        return Path::new(path).exists();
+        Path::new(path).exists()
     }
 
     // Check if path is file
     pub fn is_file(path: &str) -> bool {
-        return Path::new(path).is_file();
+        Path::new(path).is_file()
     }
 
     // Write to file

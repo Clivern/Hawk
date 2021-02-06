@@ -8,7 +8,7 @@ pub mod dir {
 
     // Check if path is dir
     pub fn is_dir(path: &str) -> bool {
-        return Path::new(path).is_dir();
+        Path::new(path).is_dir()
     }
 }
 
