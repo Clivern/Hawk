@@ -8,6 +8,7 @@ mod networking {
 
 mod core {
     pub mod func;
+    pub mod obj;
 }
 
 mod util {
